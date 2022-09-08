@@ -1,0 +1,231 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+   in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: gray;
+/* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 45, 45);
+  text-align: center;
+}
+
+#status {
+  display: flex;
+  justify-content: flex-end;
+  align-content: 5px;
+  padding: 5px 5px;
+  color: grey;
+}
+
+main {
+  width: 350px;
+  background-color: white;
+}
+
+img {
+  border-radius: 50%;
+  border: 5px solid rgb(14, 185, 65);
+}
+
+#brand {
+  display: none;
+}
+
+#free {
+font-size: 15px;
+}
+
+#cost {
+font-size: 18px;
+color: gray;
+}
+
+#healer {
+font-size: 14px;
+color: gray;
+}
+
+#stars {
+font-size: 18px;
+}
+
+
+#phone {
+  background-color: lightgreen;
+  width: 175px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  display: inline-flex;
+  margin: 0px;
+}
+
+#occupation {
+  background-color: rgb(236, 240, 241);
+  height: 80px;
+}
+
+#chatbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #248235;
+  width: 175px;
+  height: 60px;
+}
+
+#contact{
+  display: inline-flex;
+  margin: 0px;
+}
+
+#contact > p {
+  margin: 0;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    /* background-color: gray;
+    Use a system font, if none are available use an available sans-sarif   font
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      margin: 0;
+      display: grid;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(47, 45, 45);
+      text-align: center; */
+      color: red;
+
+  }
+  
+
+  .items-a {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  .items-a {
+    grid-column-start: 2;
+    grid-column-end: 5;  
+  }
+
+
+  #status {
+    display: flex;
+    justify-content: flex-end;
+    align-content: 5px;
+    padding: 5px 5px;
+    color: grey;
+  }
+  
+  main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  
+  img {
+    display: grid;
+    align-items: start;
+    border-radius: 50%;
+    border: 5px solid rgb(14, 185, 65);
+  }
+  
+  #brand {
+    grid-column-start: 2;
+    display: grid;
+  }
+  
+  #offer {
+    display: grid;
+    grid-column-start: 2;
+
+  }
+
+  #occupation {
+    display: grid;
+  }
+
+  #free {
+  font-size: 15px;
+  }
+  
+  #cost {
+  font-size: 18px;
+  color: gray;
+  }
+  
+  
+  #healer {
+  font-size: 14px;
+  color: gray;
+  }
+  
+  #stars {
+  font-size: 18px;
+  }
+  
+
+
+
+  #phone {
+    background-color: lightgreen;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #contact {
+    display: inline-flex;
+    margin: 0px;
+  }
+  
+  #chatbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #248235;
+    width: 300px;
+    height: 60px;
+  }
+  
+  #contact{
+    display: inline-flex;
+    margin: 0px;
+  }
+  
+  #contact > p {
+    margin: 0;
+  }
+}
