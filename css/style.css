@@ -245,11 +245,9 @@ font-size: 18px;
   #contact {
     display: flex;
     margin: 0px;
-    /* grid-column-start: ; */
     grid-column-start: 1;
     grid-row-start: 5;
-    /* align-items: inline; */
-
+    align-items: flex-end;
   }
 
   
